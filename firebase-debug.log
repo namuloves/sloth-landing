@@ -1,0 +1,28 @@
+[debug] [2024-11-27T04:50:34.026Z] ----------------------------------------------------------------------
+[debug] [2024-11-27T04:50:34.028Z] Command:       /opt/homebrew/Cellar/node/23.2.0/bin/node /opt/homebrew/bin/firebase init emulators
+[debug] [2024-11-27T04:50:34.028Z] CLI Version:   13.27.0
+[debug] [2024-11-27T04:50:34.028Z] Platform:      darwin
+[debug] [2024-11-27T04:50:34.028Z] Node Version:  v23.2.0
+[debug] [2024-11-27T04:50:34.029Z] Time:          Tue Nov 26 2024 23:50:34 GMT-0500 (Eastern Standard Time)
+[debug] [2024-11-27T04:50:34.029Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-27T04:50:34.034Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-27T04:50:34.034Z] > authorizing via signed-in user (namuloveswater@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/namu/slothforest
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 

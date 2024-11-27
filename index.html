@@ -103,15 +103,24 @@
         const provider = new GoogleAuthProvider();
 
         document.getElementById('googleSignIn').addEventListener('click', async () => {
-            try {
-                const result = await signInWithPopup(auth, provider);
-                const user = result.user;
-                console.log('Signed in:', user);
-                // Redirect or handle successful sign in
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        });
+    // Immediately show loading state
+    const button = document.getElementById('googleSignIn');
+    const originalText = button.innerHTML;
+    button.innerHTML = '<span>Loading...</span>';
+    button.disabled = true;
+
+    try {
+        const result = await signInWithPopup(auth, provider);
+        console.log('Success:', result);
+    } catch (error) {
+        console.error('Error:', error);
+        alert(`Authentication failed: ${error.message}`);
+    } finally {
+        // Restore button state
+        button.innerHTML = originalText;
+        button.disabled = false;
+    }
+});
     </script>
 </body>
 </html>
